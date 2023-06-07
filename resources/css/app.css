@@ -1,0 +1,164 @@
+:root{
+    --primary : #2b3467;
+    --secondary : #bad7e9;
+    --white : #fcffe7;
+    --red : #eb455f;
+    --gray : #EAEBF0;
+}
+
+/* Anchor */
+
+a{
+    color: var(--red);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* Form */
+
+#order-form input{
+    background-color: var(--gray);
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    accent-color: var(--primary);    
+}
+#order-form input:focus{
+    outline-color: var(--primary);
+}
+
+/* Background */
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+/* Card */
+.card-primary{
+    background-color: var(--primary);
+    color: var(--white);
+    transition-duration: 150ms;
+}
+.card-primary:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-primary a{
+    cursor: pointer;
+    color: var(--white);
+}
+
+.card-secondary{
+    background-color: var(--white);
+    color: var(--primary);
+    transition-duration: 150ms;
+}
+.card-secondary:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-secondary a{
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.auth-card{
+    width: clamp(30vw, 20em, 100vw);
+}
+.auth-card input{
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+
+
+/* Button */
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 500px;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 150ms;
+}
+.btn-primary:hover{
+    color: var(--white);
+    background-color:  #272F5D;
+    text-decoration: none;
+}
+.btn-primary:active{
+    color: var(--white);
+}
+.btn-primary:visited{
+    color: var(--white);
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: var(--primary);
+    border-radius: 500px;
+    outline: solid var(--primary) 2px;
+    outline-offset: -2px;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 150ms;
+}
+.btn-secondary:hover{
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-white{
+    background-color: var(--white);
+    border: 0;
+    height: fit-content;
+    color: var(--primary);
+    padding: 8px 64px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition-duration: 300ms;
+}
+.btn-white:hover{
+    filter: brightness(0.7);
+    text-decoration: none;
+}
+
+/* Form */
+.form-control{
+    background-color: var(--gray);
+}
+.form-control:focus{
+    background-color: var(--gray);
+    box-shadow: none;
+    border: solid var(--primary) 1px;
+}
+
+/* Logout */
+
+.nav-logout #btn-logout{
+    display: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-logout:hover #btn-logout{
+    display: flex;
+}
+
+.nav-logout:hover #btn-logout:hover{
+    color: var(--red) !important;
+}
+
+/* Input */
+
+.input-radio{
+    accent-color: var(--red);
+    width: 20px;
+    height: 20px;
+}
+.input-radio:not(:disabled){
+    cursor: pointer;
+}
