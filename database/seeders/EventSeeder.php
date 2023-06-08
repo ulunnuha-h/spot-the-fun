@@ -23,7 +23,7 @@ class EventSeeder extends Seeder
             'address'=>'Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270',
             'organizer'=>'PK Entertaiment',
             'price'=>120000,
-            'description'=>'1|1|1|1'
+            'description'=>'Disparekraf DKI Jakarta membatasi kapasitas penonton konser musik maksimal 70 persen.|Selain mengatur kapasitas penonton, konser musik di DKI Jakarta juga hanya bisa digelar dari pukul 11.00 WIB sampai dengan pukul 24.00 WIB.'
         ]);
 
         DB::table('events')->insert([
@@ -36,7 +36,7 @@ class EventSeeder extends Seeder
             'address'=>'Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270',
             'organizer'=>'88Rising',
             'price'=>130000,
-            'description'=>'1|1|1|1'
+            'description'=>'Disparekraf DKI Jakarta membatasi kapasitas penonton konser musik maksimal 70 persen.|Selain mengatur kapasitas penonton, konser musik di DKI Jakarta juga hanya bisa digelar dari pukul 11.00 WIB sampai dengan pukul 24.00 WIB.'
         ]);
 
         DB::table('events')->insert([
@@ -49,7 +49,7 @@ class EventSeeder extends Seeder
             'address'=>'Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270',
             'organizer'=>'Idgitaf',
             'price'=>250000,
-            'description'=>'1|1|1|1'
+            'description'=>'Disparekraf DKI Jakarta membatasi kapasitas penonton konser musik maksimal 70 persen.|Selain mengatur kapasitas penonton, konser musik di DKI Jakarta juga hanya bisa digelar dari pukul 11.00 WIB sampai dengan pukul 24.00 WIB.'
         ]);
 
         DB::table('events')->insert([
@@ -62,7 +62,20 @@ class EventSeeder extends Seeder
             'address'=>'Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270',
             'organizer'=>'Tulus Company',
             'price'=>340000,
-            'description'=>'1|1|1|1'
+            'description'=>'Disparekraf DKI Jakarta membatasi kapasitas penonton konser musik maksimal 70 persen.|Selain mengatur kapasitas penonton, konser musik di DKI Jakarta juga hanya bisa digelar dari pukul 11.00 WIB sampai dengan pukul 24.00 WIB.'
+        ]);
+
+        DB::table('events')->insert([
+            'id'=>5,
+            'images'=>'1.jpg|2.jpeg',
+            'title'=>'Pekan Gembira Ria',
+            'date'=>'2-4 September 2022',
+            'time'=>'19.45 - 22.00 WIB',
+            'location'=>'Gambir Expo PRJ Kemayoran',
+            'address'=>'Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270',
+            'organizer'=>'Jakarta International Expo',
+            'price'=>235000,
+            'description'=>'Disparekraf DKI Jakarta membatasi kapasitas penonton konser musik maksimal 70 persen.|Selain mengatur kapasitas penonton, konser musik di DKI Jakarta juga hanya bisa digelar dari pukul 11.00 WIB sampai dengan pukul 24.00 WIB.'
         ]);
     }
 }

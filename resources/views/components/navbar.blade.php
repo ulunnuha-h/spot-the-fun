@@ -7,7 +7,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="w-100 mb-4 mb-lg-0" role="search" action="event">
+        <form class="w-100 mb-4 mb-lg-0" role="search" action="/event">
           <input class="form-control rounded-pill" type="search" placeholder="Cari konser favoritmu" aria-label="Search" name="key">
         </form>
         @if ($logged)

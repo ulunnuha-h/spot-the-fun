@@ -10,6 +10,13 @@ use App\Models\Category;
 class Event extends Controller
 {
 
+    public function index(Request $req){
+        $key = $req->query("key");
+        $data = Model::where('title', 'LIKE','%'.$key.'%')->get();
+
+        return view('event.index', ['data'=>$data, 'key'=>$key]);
+    }
+
     public function description($id){
         $data = Model::find($id);
         $images = explode('|', $data->images);

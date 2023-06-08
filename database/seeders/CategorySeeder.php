@@ -68,5 +68,26 @@ class CategorySeeder extends Seeder
             'quantity'=>'0',
             'price'=>'110000'
         ]);
+
+        DB::table('categories')->insert([
+            'event_id'=>'5',
+            'category'=>'Cat 1',
+            'quantity'=>'12',
+            'price'=>'235000'
+        ]);
+        
+        DB::table('categories')->insert([
+            'event_id'=>'5',
+            'category'=>'Cat 2',
+            'quantity'=>'12',
+            'price'=>'270000'
+        ]);
+
+        DB::table('categories')->insert([
+            'event_id'=>'5',
+            'category'=>'Cat 3',
+            'quantity'=>'12',
+            'price'=>'320000'
+        ]);
     }
 }

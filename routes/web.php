@@ -41,6 +41,7 @@ Route::prefix('test')->group(function() {
 });
 
 Route::controller(Event::Class)->group(function(){
+    Route::get("/event",'index');
     Route::get("/event/{id}",'description');
     Route::get("/event/{id}/category",'category');
 });

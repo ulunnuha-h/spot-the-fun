@@ -78,7 +78,7 @@
             </section>
         </div>
         <div class="d-flex item-aligns-center justify-content-center p-5">
-          <a href="#" class="btn-primary py-2 px-4">
+          <a href="/event" class="btn-primary py-2 px-4">
               Explore more events >
           </a>
         </div>
