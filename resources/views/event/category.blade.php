@@ -84,7 +84,7 @@
                     <div class="w-100 mt-3 mb-2 bg-primary rounded-3 d-flex align-items-center justify-content-center p-4 flex-column gap-2">
                         <section class="d-flex gap-2 align-items-center mb-3">
                           <span class="fw-semibold text-white">Jumlah Tiket</span>
-                          <input type="number" required class="rounded border-0 p-1" min="1" max="100" name="quantity">
+                          <input type="number" required class="rounded border-0 py-1 px-2" min="1" max="100" name="quantity">
                         </section>
                         <button class="bg-white w-100 border-0 rounded-2 py-2 fw-semibold">Beli tiket</button>
                     </div>

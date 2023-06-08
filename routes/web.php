@@ -22,6 +22,13 @@ use Illuminate\Contracts\View\View;
 Route::get('/', [Welcome::class, 'index']);
 
 Route::middleware('auth')->group(function () {
+    Route::controller(History::Class)->group(function(){
+        Route::post("/history",'create')->name("history.create");
+        Route::get("/history",'index')->name("history.index");
+        Route::get("/history/{id}",'detail');
+    });
+    
+    Route::get("/order", [Order::class, 'index'])->name('order');
 });
 
 Route::prefix('test')->group(function() {
@@ -37,12 +44,5 @@ Route::controller(Event::Class)->group(function(){
     Route::get("/event/{id}",'description');
     Route::get("/event/{id}/category",'category');
 });
-
-Route::controller(History::Class)->group(function(){
-    Route::get("/history",'index');
-    Route::get("/history/{id}",'detail');
-});
-
-Route::get("/order", [Order::class, 'index'])->name('order');
 
 require __DIR__.'/auth.php';

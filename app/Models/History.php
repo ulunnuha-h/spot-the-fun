@@ -11,11 +11,13 @@ class History extends Model
     protected $fillable = [
         'user_id',
         'event_id',
+        'category_id',
         'name',
         'birth',
         'gender',
-        'phone'
+        'phone',
+        'quantity'
     ];
-
+    public $timestamps = true;
     protected $table = 'histories';
 }

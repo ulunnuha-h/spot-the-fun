@@ -15,10 +15,13 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id');
             $table->integer('event_id');
+            $table->integer('category_id');
+            $table->integer('quantity');
             $table->string('name');
             $table->string('birth');
             $table->string('gender');
             $table->string('phone');
+            $table->timestamps();
         });
     }
 

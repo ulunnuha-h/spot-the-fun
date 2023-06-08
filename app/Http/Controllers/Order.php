@@ -17,6 +17,8 @@ class Order extends Controller
         return view('order', 
             ['event'=>$event, 
             'category'=>$category, 
-            'quantity'=>$req->input('quantity')]);
+            'quantity'=>$req->input('quantity'),
+            'event_id'=>$req->input('event'),
+            'category_id'=>$req->input('category')]);
     }
 }
