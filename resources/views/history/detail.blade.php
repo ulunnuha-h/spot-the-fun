@@ -20,7 +20,7 @@
                         <div class="carousel-item @if ($idx == 0)
                             active
                         @endif">
-                            <img src="/events/{{$data->id}}/{{$val}}" class="d-block w-100 object-fit-cover rounded" style="aspect-ratio:18/9">
+                            <img src="/events/{{$data->event_id}}/{{$val}}" class="d-block w-100 object-fit-cover rounded" style="aspect-ratio:18/9">
                           </div>          
                         @endforeach
                     </div>
