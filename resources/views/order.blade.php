@@ -31,11 +31,11 @@
                 <label for="gender" class="fs-4 fw-semibold">Jenis Kelamin<span class="text-danger">*</span></label>            
                 <section class="d-flex gap-4">
                     <span>
-                        <input type="radio" name="gender" id="male" required value="male" style="cursor: pointer">
+                        <input type="radio" name="gender" id="male" required value="Pria" style="cursor: pointer">
                         <label for="male">Laki laki</label>
                     </span>
                     <span>
-                        <input type="radio" name="gender" id="female" value="female" style="cursor: pointer">
+                        <input type="radio" name="gender" id="female" value="Wanita" style="cursor: pointer">
                         <label for="female">Perempuan</label>
                     </span>
                 </section>

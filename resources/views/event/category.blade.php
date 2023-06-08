@@ -65,6 +65,7 @@
                           </section>
                         </div>
                       @endforeach
+                      <input type="radio" name="category" value="" required hidden>
                 </section>
                 <section class="col-4 bg-white">
                     <div class="bg-primary p-4 text-white rounded-3">
