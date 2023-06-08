@@ -6,6 +6,10 @@
     --gray : #EAEBF0;
 }
 
+*{
+    font-family: 'Plus Jakarta Sans'
+}
+
 /* Anchor */
 
 a{

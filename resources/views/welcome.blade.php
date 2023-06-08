@@ -5,7 +5,7 @@
 @section('content')
     <x-hero/>
     <div class="container my-5">
-        <h1>Most Loved Event</h1>
+        <h1 class="mb-4">Most Loved Event</h1>
         <section class="row row-cols-lg-4 row-cols-1 g-3">
             @foreach ($data as $i)
             <x-card type="pri" :data="$i"/>
@@ -14,7 +14,7 @@
     </div>
     <div class="py-5 bg-primary w-full">
         <section class="container">
-            <h1 class="text-white">What's Fun This Week</h1>
+            <h1 class="text-white mb-4">What's Fun This Week</h1>
             <section class="row row-cols-lg-4 row-cols-1 g-3">
                 @foreach ($data as $i)
                 <x-card type="sec" :data="$i"/>

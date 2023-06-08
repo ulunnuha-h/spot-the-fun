@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
     @vite(['resources/js/app.js', 'resources/css/app.css'])
     <title>Register</title>
 </head>
-<body class="d-flex align-items-center justify-content-center py-5" style="background-color: var(--white)">
+<body class="d-flex align-items-center justify-content-center flex-column py-5 mb-5" style="background-color: var(--white)">
+    <img src="images/big-logo.svg" alt="biglogo" class="my-5">
     <main class="bg-primary text-white p-5 pt-4 rounded-4 d-flex align-items-center flex-column auth-card">
         <h4>Create your new account</h4>
         <p>Have an account? <a href="/login">Login</a></p>
