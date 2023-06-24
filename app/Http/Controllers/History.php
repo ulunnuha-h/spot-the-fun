@@ -25,7 +25,7 @@ class History extends Controller
     }
 
     public function create(Request $req){
-        Model::create([
+        $data = Model::create([
             'user_id'=>Auth::user()->id,
             'event_id'=>$req->input('event_id'),
             'category_id'=>$req->input('category_id'),
@@ -36,7 +36,7 @@ class History extends Controller
             'quantity'=>$req->input('quantity')
         ]);
 
-        return redirect(route('history.index'));
+        return redirect()->route('history.detail', ['id' => $data->id]);
     }
 
     public function detail($id){

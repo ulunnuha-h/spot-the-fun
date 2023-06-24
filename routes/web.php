@@ -25,7 +25,7 @@ Route::middleware('auth')->group(function () {
     Route::controller(History::Class)->group(function(){
         Route::post("/history",'create')->name("history.create");
         Route::get("/history",'index')->name("history.index");
-        Route::get("/history/{id}",'detail');
+        Route::get("/history/{id}",'detail')->name("history.detail");
     });
     
     Route::get("/order", [Order::class, 'index'])->name('order');
