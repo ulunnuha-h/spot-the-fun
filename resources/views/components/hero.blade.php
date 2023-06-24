@@ -10,7 +10,7 @@
             <div class="carousel-item @if ($idx == 0)
                 active
             @endif">
-              <a href="event/{{$val->id}}">
+              <a href="event/{{$val->id}}/category">
                 <img src="events/{{$val->id}}/{{explode('|',$val->images)[0]}}" class="d-block w-100 rounded" style="aspect-ratio:20/9;object-fit:cover">
               </a>
             </div>    
